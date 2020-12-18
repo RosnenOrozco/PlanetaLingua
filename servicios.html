@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>PlanetaLingua</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+<link rel="shortcut icon" href="images/favicon.ico?"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/fondo-amarillo-degradado.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-orange w3-card" id="myNavbar">
+    <img src="images/fanPage_elements-02.jpg" class="w3-bar-item w3-circle" alt="logo commercial" width="60px" height="60px">
+    <a href="#home" class="w3-bar-item w3-button w3-wide w3-hover-amber">INICIO</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-left w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button w3-hover-amber">Sobre nosotros</a>
+      <a href="#team" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-user"></i>Nuestro equipo</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-th"></i>Nuestros servicios</a>
+      <a href="#pricing" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-dollar-sign"></i>Su cotización</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hover-amber"><i class="fa fa-envelope"></i> Contáctenos</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Español
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="index_en.html">English</a>
+        <a href="index_fr.html">Français</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Sobre nosotros</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Nuestros servicios</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Nuestro equipo</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Su cotización</a>
+  <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">Contáctenos</a>
+</nav>
+
+<!-- Nuestros servicios -->
+<div class="w3-container w3-amber" style="padding:60px 16px" id="work">
+  <h3 class="w3-center">NUESTROS SERVICIOS</h3>
+  <p class="w3-center w3-large">Lo mejor para impulsar su negocio y su profesión</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/language-translation.jpg" alt="translation sign" style="width:100%">
+        <div class="w3-container w3-yellow">
+          <h3>Traducción</h3>
+          <p class="w3-opacity">¡Hagamos entender sus palabras en cualquier parte del mundo!</p>
+          <p>Traducciones oficiales, académicas, técnicas y comerciales. Localización de páginas y aplicaciones web, subtitulado audiovisual y mucho más.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-book-reader"></i> Leer más</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/translator-interpreter.jpg" alt="interpreter icon" style="width:100%">
+        <div class="w3-container w3-yellow">
+          <h3>Interpretación</h3>
+          <p class="w3-opacity">¡Hablamos por y para usted en tiempo real con precisión y fluidez!</p>
+          <p>Interpretación simultánea, consecutiva y de enlace para facilitar la comprensión entre todos los participantes en sus eventos y reuniones.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-book-reader"></i> Leer más</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/editing-documents.jpg" alt="edition icon" style="width:100%">
+        <div class="w3-container w3-yellow">
+          <h3>Edición y corrección</h3>
+          <p class="w3-opacity">¡Es el máximo nivel de perfección lo que hace que su negocio sea más profesional!</p>
+          <p> Revisión y corrección de textos de carácter académico, comercial o institucional con el fin de mejorar la calidad de su comunicación escrita.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-book-reader"></i> Leer más</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="images/dicobook.jpg" alt="language teaching icon" style="width:100%">
+        <div class="w3-container w3-yellow">
+          <h3>Enseñanza de idiomas</h3>
+          <p class="w3-opacity">No te quedes atrás, ¡aprende a expresarte en otras lenguas!</p>
+          <p>Ofrecemos cursos de idiomas grupales y particulares, presenciales o en línea según los horarios e intensidad que mejor le convenga, para todas las edades.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-book-reader"></i> Leer más</span></button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <h3 class="w3-center">Nuestras cualidades más sobresalientes según nuestros clientes.</h3>
+    <div class="w3-col m6">
+      <p>Según los resultados de nuestra última encuesta de satisfacción y los<br>
+      testimonios de nuestros principales clientes, las cualidades que mejor<br>
+      caracterizan nuestra agencia son la puntualidad, nuestra diligencia para<br>
+      encontrar soluciones, nuestros altos estándares de calidad y el nivel de<br>
+      especialización de nuestros servicios.</p>
+      <p style="font-style:italic">“ Encontrar una buena agencia de traducción, especialmente una que ofrezca<br>
+      servicios de localización es complicado. He tenido la suerte de trabajar con <br>
+      <b>Planeta Lingua</b> muchas veces, y tengo plena confianza en ellos. Son rápidos, <br>
+        eficientes y el trabajo es siempre de la más alta calidad. ”<br>
+       Jessica Antequera. <span style="color:green">Cementos Argos</span></p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-clock w3-margin-right"></i>Puntualidad</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-lightbulb w3-margin-right"></i>Proactividad</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:92%">92%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-gem w3-margin-right"></i>Calidad</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:97%">97%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-tools w3-margin-right"></i>Especialización</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:88%">88%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-brown w3-padding-32">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fab fa-facebook w3-hover-opacity"></i>
+    <i class="fab fa-instagram w3-hover-opacity"></i>
+    <i class="fab fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fab fa-twitter w3-hover-opacity"></i>
+    <i class="fab fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
