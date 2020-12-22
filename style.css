@@ -82,7 +82,12 @@
     display: block;
   }
 
-  
+  .container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 75%; /* 4:3 Aspect Ratio */
+  }
   
   .iframe {
     position: absolute;
