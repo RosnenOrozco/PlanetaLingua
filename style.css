@@ -82,14 +82,14 @@
     display: block;
   }
 
-  .mapa {
+  .map {
     position: relative;
     width: 100%;
     overflow: hidden;
     padding-top: 75%; /* 4:3 Aspect Ratio */
   }
   
-  .iframe {
+  .map iframe {
     position: absolute;
     top: 0;
     left: 0;
